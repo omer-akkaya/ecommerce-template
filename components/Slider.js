@@ -1,11 +1,39 @@
-import React from "react";
+import Image from "next/image";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
 
-const Slider = () => {
-  return (
-    <div className="max-w-full mx-24 h-[600px] bg-gray-400 flex justify-center items-center">
-      Slider
-    </div>
-  );
+const SliderComponent = () => {
+  return <SimpleSlider />;
 };
 
-export default Slider;
+export default SliderComponent;
+
+function SimpleSlider() {
+  const settings = {
+    speed: 1000,
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    dots: true,
+  };
+  return (
+    <div className="w-full mb-10 cursor-pointer select-none">
+      <Slider {...settings} className="">
+        <Image
+          src={"/../public/slick_1.jpeg"}
+          width={2000}
+          height={2000}
+          className=""
+        />{" "}
+        <Image
+          src={"/../public/slick_2.jpeg"}
+          width={2000}
+          height={2000}
+          className=""
+        />
+      </Slider>
+    </div>
+  );
+}
