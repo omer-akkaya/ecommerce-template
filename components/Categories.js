@@ -6,7 +6,7 @@ const Categories = () => {
   const [selectedCategory, setSelectedCategory] = useState(1);
 
   return (
-    <div className="max-w-6xl mx-auto flex justify-center">
+    <div className="max-w-6xl mx-auto hidden md:flex justify-center overflow-scroll md:overflow-auto">
       {CategoryArray.map(({ id, title, image }) => {
         return (
           <SingleCategory
@@ -34,7 +34,7 @@ const SingleCategory = ({
   }
   return (
     <div
-      className={`flex flex-col justify-center items-center w-min px-8 py-1 rounded-t-3xl hover:bg-sky-500 transition-all group cursor-pointer select-none
+      className={`flex flex-col justify-center items-center w-min px-8 pt-1 pb-4 rounded-t-3xl hover:bg-sky-500 transition-all group cursor-pointer select-none
       ${id == selectedCategory ? "bg-sky-500" : null}`}
       onClick={clickHandler}
     >
