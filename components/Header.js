@@ -24,10 +24,10 @@ const Header = () => {
 const Logo = () => {
   return (
     <Image
-      src={"/logo.jpeg"}
-      width={200}
-      height={200}
-      className="w-36 mr-16 cursor-pointer select-none ml-4 md:ml-0"
+      src={"/logo.png"}
+      width={151}
+      height={60}
+      className="mr-16 cursor-pointer select-none ml-4 md:ml-0"
     />
   );
 };
