@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Shorts = () => {
   return (
-    <div className="max-w-6xl mx-auto py-4 flex justify-between overflow-scroll md:overflow-auto">
+    <div className="max-w-6xl mx-auto py-4 flex justify-between overflow-scroll md:overflow-visible">
       {CategoryArray.map(({ title, shorts }) => {
         return <SingleShort title={title} shorts={shorts} />;
       })}
