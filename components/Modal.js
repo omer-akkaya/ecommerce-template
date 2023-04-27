@@ -18,7 +18,7 @@ const Modal = () => {
     >
       <div className="flex flex-col z-20 bg-white justify-center items-center p-3 rounded-3xl shadow-xl relative">
         <GiCancel className="absolute top-0 right-0 text-6xl m-2 hover:bg-red-500 rounded-full cursor-pointer" />
-        <Image src={"/shorts_1.png"} width={500} height={500} />
+        <Image src={"/shorts_1.png"} width={450} height={300} alt="shorts_1" />
         <div className="py-5 text-2xl font-semibold">
           TÜM ÜRÜNLERDE %25 İNDİRİM
         </div>
