@@ -24,7 +24,7 @@ const Header = () => {
 const Logo = () => {
   return (
     <Image
-      src={"/../public/logo.jpeg"}
+      src={"/logo.jpeg"}
       width={200}
       height={200}
       className="w-36 mr-16 cursor-pointer select-none ml-4 md:ml-0"
