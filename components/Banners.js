@@ -20,7 +20,7 @@ function Banner({ id }) {
       >
         adss
       </div>
-      <Image src={`/../public/banner_${id}.jpeg`} width={1000} height={1000} />
+      <Image src={`/banner_${id}.jpeg`} width={1000} height={1000} />
     </div>
   );
 }

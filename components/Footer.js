@@ -19,7 +19,7 @@ function Col1() {
   return (
     <div className="flex flex-col">
       <Image
-        src={"/../public/logo.jpeg"}
+        src={"/logo.jpeg"}
         width={151}
         height={60}
         className="mb-4 cursor-pointer select-none"

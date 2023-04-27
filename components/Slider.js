@@ -21,18 +21,8 @@ function SimpleSlider() {
   return (
     <div className="w-full mb-10 cursor-pointer select-none">
       <Slider {...settings} className="">
-        <Image
-          src={"/../public/slick_1.jpeg"}
-          width={2000}
-          height={2000}
-          className=""
-        />{" "}
-        <Image
-          src={"/../public/slick_2.jpeg"}
-          width={2000}
-          height={2000}
-          className=""
-        />
+        <Image src={"/slick_1.jpeg"} width={2000} height={2000} className="" />{" "}
+        <Image src={"/slick_2.jpeg"} width={2000} height={2000} className="" />
       </Slider>
     </div>
   );
