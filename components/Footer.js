@@ -17,9 +17,9 @@ const Footer = () => {
 
 function Col1() {
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col ">
       <Image
-        src={"/logo.jpeg"}
+        src={"/logo.png"}
         width={151}
         height={60}
         className="mb-4 cursor-pointer select-none"

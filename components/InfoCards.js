@@ -3,7 +3,7 @@ import { infoCardsSrc } from "@/public/infoCardsSrc";
 
 const InfoCards = () => {
   return (
-    <div className="px-10 md:px-0 flex flex-wrap max-w-6xl mx-auto justify-between my-16">
+    <div className="px-5 md:px-0 flex flex-wrap max-w-6xl mx-auto justify-between my-16">
       {infoCardsSrc.map(({ title, imageUrl }) => {
         return <SingleCard title={title} imageUrl={imageUrl} />;
       })}
